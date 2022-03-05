@@ -33,6 +33,7 @@
   --bg-secondary: #F5F5F5;
   --bg-tertiary: #FFFFFF;
   --text-color: #2D2E36;
+  --under-line: #E3E1E3;
 }
 
 .dark {
@@ -42,6 +43,7 @@
   --text-color: #FFFFFF;
   --bg-tertiary: #2D2E36;
   --bg-border: 1px solid #2D2E36;
+  --under-line: #2D2E36;
   background: var(--bg);
 }
 
