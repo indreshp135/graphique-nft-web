@@ -1,7 +1,7 @@
 import React from "react";
 import classes from './UserCard.module.css';
 import { Card, Image } from "react-bootstrap";
-import img from '../../images/user1.svg';
+// import img from '../../images/user1.svg';
 import verifiedBlack from '../../images/tick.svg';
 import verifiedWhite from '../../images/tickwhite.svg';
 

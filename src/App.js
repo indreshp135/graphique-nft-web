@@ -23,8 +23,8 @@ function App() {
       <Header dark={dark} />
 
       <Switch>
-        <Route path="/" exact component={ItemPage} />
-        <Route path="/create" exact component={LastPage} />
+      <Route path="/" exact render={()=><HomePage dark={dark}/>}/>
+        {/* <Route path="/create" exact component={Home } /> */}
         <Route path="/profile" exact component={Profile} />
         <Route path="/item" exact component={HomePage} />
       </Switch>
