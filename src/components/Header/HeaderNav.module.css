@@ -1,47 +1,58 @@
 .navbartoggle {
-    right: 0;
-    border: none;
-    background: none;
+  right: 0;
+  border: none;
+  background: none;
 }
 
 .navbartoggle:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
-.navbar{
-    align-self: flex-start;
-    position: absolute;
-        position: sticky;
-        top: 0;
+.navbar {
+  align-self: flex-start;
+  position: absolute;
+  position: sticky;
+  top: 0;
 }
-
-
 
 a {
-    font-size: inherit;
-    color: inherit;
-    text-decoration: none;
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
 }
 
 .navLinksLight {
-    color: var(--bg-color);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+  color: var(--bg-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .navLinksDark {
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .buttonCreate {
-    margin-left: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-    height: fit-content;
-    align-self: center;
+  margin-left: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  height: fit-content;
+  align-self: center;
 }
 
+.buttonCancel {
+  font-weight: 600;
+  font-family: "poppins";
+  border-color: "#DA18A3";
+  margin: 0px 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  color: var(--text-color);
+  background: var(--bg-secondary);
+  border-color: "#DA18A3";
+}

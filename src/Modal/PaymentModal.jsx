@@ -1,48 +1,68 @@
-import {Button, Modal,Container, Image} from "react-bootstrap";
+import { Button, Modal, Container, Image } from "react-bootstrap";
 import image from "../lucas.png";
-import classes from "./Modal.module.css"
+import classes from "./Modal.module.css";
 
 export const PaymentModal = (props) => {
+  return (
+    <Modal
+      className={classes.modal}
+      centered
+      open={true}
+      {...props}
+      style={{ borderRadius: "20px" }}
+    >
+      <Modal.Header
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Modal.Title className={classes.modalTitle}>
+          Payment Successful
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body className="show-grid">
+        <Container
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            paddingTop: "25px",
+            paddingBottom: "16px",
+            width: "365px",
+          }}
+        >
+          <Image
+            style={{
+              alignSelf: "center",
+              marginBottom: "30px",
+              width: "211px",
+              height: "206px",
+            }}
+            src={image}
+          />
+          <p style={{ textAlign: "center" }} className={classes.textSub}>
+            You successfully purchased&nbsp;
+            <span className={classes.textTitle}>
+              Abstract Smoke Red Blue&nbsp;
+            </span>
+            from&nbsp;
+            <span className={classes.textTitle}>Mia Ayana</span>
+          </p>
+        </Container>
+      </Modal.Body>
+      <Modal.Footer
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          flexDirection: "column",
+          padding: "25px",
+        }}
+      >
+        <div className={classes.shareTitle}>Share</div>
 
-        return (
-
-            <Modal className={classes.modal} centered open={true}  {...props} style={{ borderRadius:"20px"}} >
-              <Modal.Header style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }} >
-                <Modal.Title  className={classes.modalTitle}>
-                    Payment Successful
-                </Modal.Title>
-              </Modal.Header>
-              <Modal.Body className="show-grid">
-              <Container style={{
-                  display: "flex",
-                  flexDirection:"column",
-                  justifyContent:"center",
-                  paddingTop:"25px",
-                  paddingBottom:"16px",
-                  width:"365px",
-                }} > 
-                <Image style={{alignSelf:"center", marginBottom:"30px",width:"211px",height:"206px"}} src={image}/>
-                <p style={{textAlign:"center"}} className={classes.textSub}>You successfully purchased&nbsp;
-                <span className={classes.textTitle}>
-                 Abstract Smoke Red Blue&nbsp;</span>from&nbsp;
-                 <span className={classes.textTitle}>Mia Ayana</span></p>
-             
-                </Container>
-              </Modal.Body>
-              <Modal.Footer style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  flexDirection:"column",
-                  padding:"25px"
-                }}>
-                
-                 <div className={classes.shareTitle}>Share</div>
-       
-         <div className={classes.twoTwo}>
+        <div className={classes.twoTwo}>
           <svg
             width="25"
             height="25"
@@ -94,10 +114,8 @@ export const PaymentModal = (props) => {
               fill={props.dark ? "#FFFFFF" : "#2D2E36"}
             />
           </svg>
-        
-        </div> 
-              </Modal.Footer>
-            </Modal>
-            );
-    
-}
+        </div>
+      </Modal.Footer>
+    </Modal>
+  );
+};
