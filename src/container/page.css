@@ -1,8 +1,5 @@
-/* Rectangle 17 */
 .c1{
-    /* White */
-    background: #FFFFFF;
-    /* Gray/2 */
+    background: var(--bg-tertiary);
     border: 1px dashed #888888;
     box-sizing: border-box;
     border-radius: 10px;
@@ -15,7 +12,7 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
-    color: #2D2E36;
+    color: var(--text-color);
     margin: 40px;
 }
 
@@ -31,17 +28,29 @@
     font-size: 28px;
     line-height: 42px;
 
-    color: #2D2E36;
+    color: var(--text-color);
 
 }
 
 .h3{
-/* Heading 2 */
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 36px;
-    color: #2D2E36;
+    color: var(--text-color);
 
+}
+
+.light .drop-btn{
+    border-left: none;
+    border-color:#ced4da;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.bd-r{
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }

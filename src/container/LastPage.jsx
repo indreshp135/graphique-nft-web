@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Image, Form, Button } from "react-bootstrap";
 import image from "./img.svg";
-import './page.css'
+import './page.css';
 
 export const LastPage = () => {
     return (
-        <Container style={{maxWidth:"500px"}}>
+        <Container style={{maxWidth:"600px"}}>
             <h1 className="h1">Create New Item</h1>
             <Form>
             <h4 className="h3 mt-4">Upload File</h4>
@@ -34,10 +34,19 @@ export const LastPage = () => {
                     <Form.Label className="h3">Password</Form.Label>
                     <textarea className="form-control" rows="5" placeholder="Description of your team"></textarea>
                 </Form.Group>
-                <Form.Group className="mb-5 mt-4" controlId="formBasicEmail">
-                    <Form.Label className="h3">Price</Form.Label>
-                    <Form.Control type="email" placeholder="Enter price" />
-                </Form.Group>
+
+                <Form.Label className="h3">Price</Form.Label>
+                <div className="input-group mb-4">
+                    <input type="text" className="form-control bd-r" aria-label="Text input with dropdown button" placeholder="Enter Price"/>
+                    <div className="input-group-append" >
+                        <button className="btn btn-outline-secondary dropdown-toggle drop-btn" type="button" data-bs-toggle="dropdown" aria-expanded="true">ETH</button>
+                        <ul className="dropdown-menu dropdown-menu-end">
+                            <li><a className="dropdown-item" href="#">Dollar</a></li>
+                            <li><a className="dropdown-item" href="#">Rupees</a></li>
+                            <li><a className="dropdown-item" href="#">Yen</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <div className="d-flex justify-content-end mb-3">
                 <Button variant="primary" type="submit">
                     Create Item
