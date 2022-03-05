@@ -1,17 +1,37 @@
-import { Button, Modal, Container, Image } from "react-bootstrap";
+import { Modal, Container, Image } from "react-bootstrap";
+import React from "react";
 import image from "../lucas.png";
 import classes from "./Modal.module.css";
 
-export const Modal1 = (props) => {
+export const CheckModal = (props) => {
+  const [isMobile, setIsMobile] = React.useState(false);
+  React.useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth < 800) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    }
+    window.addEventListener("resize", handleResize);
+    handleResize();
+  });
   return (
     <Modal
       className={classes.modal}
-      centered
+      centered={!isMobile}
+      id={!isMobile?"":"checkModalMobile"}
       open={true}
-      {...props}
-      style={{ borderRadius: "20px" }}
+      onHide={props.onHide}
+      show={props.show}
+      style={{
+        borderColor: "transparent",
+        backgroundColor: "transparent",
+        borderRadius: "20px",
+      }}
     >
       <Modal.Header
+       className={props.dark?classes.dark_modal:""}
         style={{
           display: "flex",
           justifyContent: "center",
@@ -20,7 +40,8 @@ export const Modal1 = (props) => {
       >
         <Modal.Title className={classes.modalTitle}>Check Out</Modal.Title>
       </Modal.Header>
-      <Modal.Body className="show-grid">
+      <Modal.Body 
+          className={props.dark?`${classes.dark_modal} show-grid`:"show-grid"} >
         <Container
           style={{
             display: "flex",
@@ -92,6 +113,7 @@ export const Modal1 = (props) => {
         </Container>
       </Modal.Body>
       <Modal.Footer
+        className={props.dark?classes.dark_modal:""}
         style={{
           display: "flex",
           justifyContent: "center",
@@ -99,12 +121,8 @@ export const Modal1 = (props) => {
           padding: "30px",
         }}
       >
-        <Button className={classes.buttonConfirm} onClick={props.onHide}>
-          Checkout
-        </Button>
-        <Button className={classes.buttonCancel} onClick={props.onHide}>
-          Cancel
-        </Button>
+         <button onClick={props.onHide} className={`${classes.buttonCancel} btn-primary`}> Checkout</button>
+            <button onClick={props.onHide} className={`${classes.buttonCancel} btn-btn`}>Cancel</button>
       </Modal.Footer>
     </Modal>
   );

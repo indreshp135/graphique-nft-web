@@ -2,12 +2,19 @@ import { Col, Container, Image, Row, Button } from "react-bootstrap";
 import classes from "./Item.module.css";
 import image from "../lucas.png";
 import girl from "../girl.png";
+import { useState } from "react";
+import { CheckModal } from "../Modal/Modal";
 
-export const ItemPage = () => {
+export const ItemPage = ({dark}) => {
+    const [index,setIndex] = useState(1);
+    const [openCheck,setOpenCheck] = useState(false);
+    const [openPayment,setOpenPayment] = useState(false);
+
+    const onClick = (index) => setIndex(index);
   return (
     <Container>
       <Row xxl={12}>
-        <Col  className="d-flex justify-content-evenly my-5 align-items-center">
+        <Col className="d-flex justify-content-evenly my-5 align-items-center">
           <Image
             width="575px"
             fluid
@@ -51,20 +58,24 @@ export const ItemPage = () => {
               marginTop: "26px",
             }}
           >
-            <p className={classes.p} style={{ fontWeight: "600" }}>
+            <p onClick={() =>onClick(1)}  className={classes.p} style={{ fontWeight: "600" }}>
               Details
             </p>
-            <p className={classes.p}>Offers</p>
-            <p className={classes.p}>History</p>
+            <p onClick={() =>onClick(2)}  className={classes.p}>Offers</p>
+            <p onClick={() =>onClick(3)}  className={classes.p}>History</p>
           </div>
           <div
             style={{
               display: "flex",
               flexDirection: "row",
-              marginBottom: "30px",
+              marginBottom: "30px",       
             }}
           >
-            <div className={classes.line} />
+            <div className={index===1?classes.line:classes.lineOff} />
+            <div className={classes.lineGap} />
+            <div className={index===2?classes.line:classes.lineOff} />
+            <div className={classes.lineGap} />
+            <div className={index===3?classes.line:classes.lineOff} />
             <div className={classes.lineSelect} />
           </div>
           <p className={classes.p}>
@@ -76,16 +87,18 @@ export const ItemPage = () => {
           <div
             style={{
               display: "flex",
-              justifyContent: "center",
+              justifyContent: "space-around",
               alignItems: "center",
               padding: "30px",
+              gap:"25px"
             }}
           >
-            <Button className={classes.buttonConfirm}> Buy for 4.5 ETH</Button>
+            <button onClick={()=>setOpenCheck(true)} className={`${classes.buttonCancel} btn-primary`}> Buy for 4.5 ETH</button>
             <button className={`${classes.buttonCancel} btn-btn`}>Cancel</button>
           </div>
         </Col>
       </Row>
+      <CheckModal dark={dark} show={openCheck} onHide={()=>setOpenCheck(false)}/>
     </Container>
   );
 };

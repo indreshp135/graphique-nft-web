@@ -1,12 +1,17 @@
-.modal {
-  background-color: var(--bg);
-  border-radius: 20px;
+.dark_modal {
+  background-color: #24252D;
+  color: #fff;
+  border-color: #3B3F4F;
 }
+
+.dark .modal-dialog-centered {
+  background: #24252D;
+}
+
 .modalTitle {
   font-family: "poppins";
   font-weight: 600;
   font-size: 24px;
-  color: var(--text-color);
   margin: 30px auto;
 }
 .shareTitle {
@@ -59,25 +64,20 @@
 }
 
 .buttonCheck {
-  font-weight: 600;
-  font-family: "poppins";
-  border-color: "#DA18A3";
-  margin: 0px 10px;
-  font-size: 16px;
-  border-radius: 10px;
-  background: "linear-gradient(101.12deg, #EB1484 27.35%, #C91CC3 99.99%, #C81CC5 100%, #C81CC5 100%)";
+    flex: 1;
+    font-weight: 600;
+    width: 104px;
+    margin: 0px 10px;
+    padding: 9px;
+    font-size: 16px;
 }
 
 .buttonCancel {
   font-weight: 600;
-  font-family: "poppins";
-  border-color: "#DA18A3";
+  width: 104px;
   margin: 0px 10px;
+  padding: 9px;
   font-size: 16px;
-  border-radius: 10px;
-  color: var(--text-color);
-  background: var(--bg-secondary);
-  border-color: "#DA18A3";
 }
 
 .twoTwo {
