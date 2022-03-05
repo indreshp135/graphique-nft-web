@@ -14,6 +14,7 @@
 .dark {
   --bg: #24252D;
   --bg-secondary: #3B3F4F;
+  --bg-search:#1B1A21;
   --text-color: #FFFFFF;
   --bg-tertiary: #2D2E36;
   background: var(--bg);

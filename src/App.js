@@ -2,9 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { LastPage } from './container/LastPage';
 import './App.css';
-import { PhotoCard } from './components/PhotoCard';
 
-import Home from './Modal/Modal'
 import { Route, Switch } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -21,7 +19,7 @@ const Item = () => {
 
 function App() {
 
-  const dark = false;
+  const dark = true;
 
   return (
     <div className={dark ? "dark" : "light"}>
@@ -29,9 +27,8 @@ function App() {
       
       <Switch>
       <Route path="/" exact component={LastPage} />
-        <Route path="/create" exact component={<Home />} />
-        <Route path="/profile" exact component={<Profile />} />
-        <Route path="/item" exact component={<Item />} />
+        <Route path="/create" exact component={Home } />
+        <Route path="/profile" exact component={Profile} />
         
         </Switch>
       <Footer dark={dark}/>
