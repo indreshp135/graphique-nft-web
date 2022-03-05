@@ -28,3 +28,8 @@
 .dark ::placeholder {
   color: var(--text-color);
 }
+
+.c1:hover {
+  background: var(--bg-secondary);
+  transform: scale(1.01);
+}
