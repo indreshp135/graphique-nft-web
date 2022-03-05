@@ -49,15 +49,15 @@ var cards = [
 
 function App() {
 
-  const dark = true;
+  const dark = false;
 
   return (
     <div className={dark ? "dark" : "light"}>
       {/* <Header dark={dark}/> */}
       
       <Switch>
-      <Route path="/" exact component={LastPage} dark={dark} />
-        <Route path="/create" exact component={Home} />
+      <Route path="/" exact render={()=><LastPage dark={dark}/>} />
+        <Route path="/create" exact component={Home } />
         <Route path="/profile" exact component={Profile} />
         <Route path="/item" exact component={Item} />
         

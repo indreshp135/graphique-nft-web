@@ -79,3 +79,20 @@
   background: var(--bg-secondary);
   transform: scale(1.01);
 }
+
+body::-webkit-scrollbar-track {
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar {
+	width: 9px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #DA18A3;
+}
+
+.hr {
+  border-top: 1px solid var(--bg-secondary);
+}
