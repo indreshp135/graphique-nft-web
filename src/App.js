@@ -2,7 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { LastPage } from './container/LastPage';
 import './App.css';
-import {Modal1} from './Modal/Modal'
+import {Modal1} from './Modal/Modal';
+import {PaymentModal} from './Modal/PaymentModal'
 import { Route, Switch } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -21,7 +22,7 @@ const Home = () => {
         Launch modal with grid
       </Button>
 
-      <Modal1 style={{ zIndex:"6"}} show={modalShow} onHide={() => setModalShow(false)} />
+      <PaymentModal dark={true} show={modalShow} onHide={() => setModalShow(false)} />
     </div>
   );
 }

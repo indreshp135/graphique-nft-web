@@ -23,7 +23,7 @@
 .dark input, .dark select, .dark textarea, .dark input:focus, .dark select:focus, .dark textarea:focus {
   background: var(--bg-secondary);
   color: var(--text-color);
-  border: none!important;
+  border: none;
 }
 
 .dark ::placeholder {

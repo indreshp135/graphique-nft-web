@@ -1,21 +1,18 @@
 import {Button, Modal,Container, Image} from "react-bootstrap";
-import image from "../lucas.png"
+import image from "../lucas.png";
+import classes from "./Modal.module.css"
 
 export const Modal1 = (props) =>   {
- 
+    
     return (
 
-<<<<<<< HEAD
-    <Modal centered open={true}  {...props} aria-labelledby="contained-modal-title-vcenter" style={{ borderRadius:"20px"}} >
-=======
-    <Modal  {...props} aria-labelledby="contained-modal-title-vcenter" style={{ borderRadius:"20px",width:"600px"}} >
->>>>>>> 71b29f0 (modal)
+    <Modal className={classes.modal} centered open={true}  {...props} style={{ borderRadius:"20px"}} >
       <Modal.Header style={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
         }} >
-        <Modal.Title  style={{ fontFamily:"poppins", fontWeight:"600", fontSize:"24px", margin:"30px"}}>
+        <Modal.Title  className={classes.modalTitle}>
             Check Out
         </Modal.Title>
       </Modal.Header>
@@ -29,14 +26,13 @@ export const Modal1 = (props) =>   {
           justifyContent:"space-between"
         }} >
           <div
-            style={{ fontFamily:"poppins", fontWeight:"600", fontSize:"16px", margin:"30px , auto"}}
+            className={classes.textTitle}
      
             >
               Item
             </div>
             <div
-            style={{ fontFamily:"poppins", fontWeight:"600", fontSize:"16px", margin:"30px , auto"}}
-          
+             className={classes.textTitle}
             >
               Subtotal
             </div>
@@ -55,25 +51,25 @@ export const Modal1 = (props) =>   {
           flexDirection:"column",
           padding:"15px"
         }}>
-            <div style={{ fontFamily:"poppins", fontWeight:"600", fontSize:"14px", margin:"4px 0"}}>Mia Ayana</div>
-            <div style={{fontFamily:"poppins", fontWeight:"normal", fontSize:"14px", margin:"4px 0"}}>
+            <div   className={classes.cardTitle}>Mia Ayana</div>
+            <div   className={classes.cardSub}>
               Abstract Smoke Red Blue  
             </div>
         </Container> 
         </div>
         <div  style={{
           display: "flex"}}>
-            <div
-            style={{ fontFamily:"poppins", fontWeight:"normal", fontSize:"16px", margin:"30px auto"}}     
+            <p
+            className={classes.num}    
             >
-             4.5  
-            </div>
+             4.5&nbsp;  
          
-            <div
-            style={{ fontFamily:"poppins", fontWeight:"600", fontSize:"16px", margin:"30px auto"}}
+            <span
+             className={classes.unit}    
             >
-             {' '} ETH 
-            </div>
+             ETH 
+            </span>
+          </p>
         </div>
         </Container>
         <Container style={{
@@ -82,25 +78,26 @@ export const Modal1 = (props) =>   {
          
         }} >
           <div
-            style={{ fontFamily:"poppins", fontWeight:"600", fontSize:"16px", margin:"30px , auto"}}
+           className={classes.textTitle}
      
             >
               Total
             </div>
-        <div  style={{
-          display: "flex"}}>
-            <div
-            style={{ fontFamily:"poppins", fontWeight:"normal", fontSize:"16px", margin:"30px , auto"}}     
+         <div  style={{
+          display: "flex"
+          }}>
+            <p
+            className={classes.num}    
             >
-             4.5  
-            </div>
-            <div
-            style={{ fontFamily:"poppins", fontWeight:"600", fontSize:"16px", margin:"30px , auto"}}
+             4.5&nbsp;  
+         
+            <span
+             className={classes.unit}    
             >
              ETH 
-            </div>
-        </div>
-      
+            </span>
+          </p>
+       </div>
         </Container>
         </Container>
       </Modal.Body>
@@ -110,32 +107,10 @@ export const Modal1 = (props) =>   {
           alignItems: "center",
           padding:"30px"
         }}>
-         <Button style={{
-             fontWeight:"600",
-             fontFamily:"poppins",
-             borderColor:"#DA18A3",
-             margin: "0px 10px",
-             fontSize:"16px",
-             width:"140px",
-             height:"40px", 
-             borderRadius: "10px",
-             background: "linear-gradient(101.12deg, #EB1484 27.35%, #C91CC3 99.99%, #C81CC5 100%, #C81CC5 100%)"}}
+         <Button 
+            className={classes.buttonConfirm}
             onClick={props.onHide}>Checkout</Button>    
-         <Button style={{
-             fontWeight:"600",
-             fontFamily:"poppins",
-             borderColor:"#DA18A3",
-             margin: "0px 10px",
-             fontSize:"16px",
-             width:"140px",
-             height:"40px", 
-             borderRadius: "10px",
-             background:"white",
-             color: "#DA18A3"}}
-<<<<<<< HEAD
-             className="btn-bdr"
-=======
->>>>>>> 71b29f0 (modal)
+         <Button className={classes.buttonCancel}
             onClick= {props.onHide}>Cancel</Button>    
       </Modal.Footer>
     </Modal>
