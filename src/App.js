@@ -19,9 +19,12 @@ const Item = () => {
 }
 
 function App() {
+
+  const dark = false;
+
   return (
-    <div className='dark'>
-      <Header />
+    <div className={dark ? "dark" : "light"}>
+      <Header dark={dark}/>
       
       <Switch>
       <Route path="/" exact component={LastPage} />
@@ -30,7 +33,7 @@ function App() {
         <Route path="/item" exact component={<Item />} />
         
         </Switch>
-      <Footer />
+      <Footer dark={dark}/>
     </div>
   );
 }

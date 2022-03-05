@@ -1,4 +1,4 @@
-.searchBar {
+.searchBarLight {
     background: var(--bg-primary);
     display: flex;
 flex-direction: row;
@@ -16,11 +16,30 @@ box-sizing: border-box;
 border-radius: 10px;
 }
 
-.searchBar input, .searchBar input:focus {
-    background: var(--bg-primary);
+.searchBarDark {
+    background: #1B1A21;
+    
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0 19px 0 15px;
+
+position: static;
+width: 627px;
+height: 40px;
+margin: auto 10px;
+top: 0px;
+
+
+box-sizing: border-box;
+border-radius: 10px;
 }
 
-.searchBar > * {
+.searchInput, .searchInput:focus {
+    background: none;
+}
+
+.searchBarLight, .searchBarDark > * {
     margin: 0 5px;
 }
 
@@ -30,7 +49,7 @@ border-radius: 10px;
     color: var(--text-color);
 }
 
-.searchBar input {
+.searchInput {
     position: static;
 width: 100%;
 height: 18px;
@@ -44,6 +63,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 12px;
 line-height: 18px;
+
 /* identical to box height */
 
 
@@ -53,6 +73,6 @@ color: #888888;
 border: none;
 }
 
-.searchBar input:focus {
+.searchInput:focus {
     outline: none;
 }
