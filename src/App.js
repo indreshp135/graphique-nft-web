@@ -8,8 +8,10 @@ import { Route, Switch } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import { ItemPage } from "./ItemPage/ItemPage";
+import { PhotoCard } from "./components/Cards/PhotoCard";
 
-// import img from './images/abc.png';
+import img from './images/abc.png';
+import { UserCard } from "./components/Cards/UserCard";
 // import user1 from './images/user1.svg';
 
 function App() {

@@ -4,16 +4,29 @@ import classes from "./HomePage.module.css";
 import banner from "../images/homeBanner.svg";
 import circle2 from "../images/circle2.svg";
 import Carousel from "react-elastic-carousel";
-import user1 from "../images/users/user1.svg";
-import user2 from "../images/users/user2.svg";
-import user3 from "../images/users/user3.svg";
-import user4 from "../images/users/user4.svg";
-import user5 from "../images/users/user5.svg";
+import user1 from "../girl.png";
+import user2 from "../girl.png";
+import user3 from "../girl.png";
+import user4 from "../girl.png";
+import user5 from "../girl.png";
 import { UserCard } from "../components/Cards/UserCard";
 import { Deck } from "../components/Deck/Deck";
 import { propTypes } from "react-bootstrap/esm/Image";
+import "./homepage.css";
 
 export const HomePage = props => {
+  const [isMobile, setIsMobile] = React.useState(false);
+  React.useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth < 800) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    }
+    window.addEventListener("resize", handleResize);
+    handleResize();
+  });
   var userCards = [
     {
       photo: user1,
@@ -64,11 +77,19 @@ export const HomePage = props => {
         </div>
       </Row>
       <Row>
-        <Carousel breakPoints={{ breakPoints }}>
-          {userCards.map(userCard => (
-            <UserCard {...userCard} dark={props.dark} />
-          ))}
-        </Carousel>
+        {isMobile ? (
+          <div className={classes.mobileCarousel}>
+            {userCards.map(userCard => (
+              <UserCard {...userCard} dark={props.dark} />
+            ))}
+          </div>
+        ) : (
+          <Carousel itemsToShow={4} itemsToScroll={4}>
+            {userCards.map(userCard => (
+              <UserCard {...userCard} dark={props.dark} />
+            ))}
+          </Carousel>
+        )}
       </Row>
       <div className={classes.deck}>
         <Deck />

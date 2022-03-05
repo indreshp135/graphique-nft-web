@@ -1,0 +1,18 @@
+.rec.rec-arrow {
+  background-color: aliceblue;
+}
+
+.rec.rec-arrow:hover {
+  background-color: var(--primary-l);
+}
+
+.rec.rec-dot {
+  display: none;
+  background-color: aliceblue;
+  border-color: var(--primary-d);
+}
+
+.rec.rec-dot_active {
+  display: none;
+  background-color: var(--primary-l);
+}
