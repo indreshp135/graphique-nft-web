@@ -1,7 +1,7 @@
 .btn-primary{
   background: linear-gradient(101.12deg, #EB1484 27.35%, #C91CC3 99.99%, #C81CC5 100%, #C81CC5 100%);
   border-radius: 10px;
-  border-color: transparent!important;
+  border-color: transparent;
 }
 
 .light {
@@ -32,4 +32,24 @@
 .c1:hover {
   background: var(--bg-secondary);
   transform: scale(1.01);
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: -webkit-linear-gradient(to right, #834d9b, #d04ed6);
+  background: linear-gradient(to right, #834d9b, #d04ed6);
+}
+
+.wrapper a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 3px;
+  text-transform: uppercase;
+  color: #585858;
+  font-family: 'Roboto', sans-serif;
 }
