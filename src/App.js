@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { LastPage } from './container/LastPage';
 import './App.css';
+import { PhotoCard } from './components/PhotoCard';
 
 import Home from './Modal/Modal'
 import { Route, Switch } from 'react-router-dom';
