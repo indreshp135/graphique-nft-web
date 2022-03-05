@@ -2,14 +2,11 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { LastPage } from './container/LastPage';
 import './App.css';
-
+import Home from './Modal/Modal'
 import { Route, Switch } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
-const Home = () => {
-  return <div>Home</div>
-}
 const Profile = () => {
   return <div>Profile</div>
 }
