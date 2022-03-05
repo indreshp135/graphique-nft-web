@@ -3,7 +3,7 @@ import classes from "./Header.module.css";
 import SearchBar from "./SearchBar";
 import HeaderNav from "./HeaderNav";
 
-const Header = () => {
+const Header = ({dark}) => {
   return (
     <div className={classes.header_d}>
       <svg
@@ -23,8 +23,8 @@ const Header = () => {
         />
       </svg>
 
-      <SearchBar />
-      <HeaderNav />
+      <SearchBar dark={dark} />
+      <HeaderNav dark={dark} />
     </div>
   );
 };

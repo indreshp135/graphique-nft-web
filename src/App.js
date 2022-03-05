@@ -20,7 +20,7 @@ const Item = () => {
 
 function App() {
   return (
-    <div className='light'>
+    <div className='dark'>
       <Header />
       
       <Switch>

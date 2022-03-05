@@ -1,4 +1,5 @@
 .searchBar {
+    background: var(--bg-primary);
     display: flex;
 flex-direction: row;
 align-items: center;
@@ -10,13 +11,13 @@ height: 40px;
 margin: auto 10px;
 top: 0px;
 
-
-/* Black/2 */
-
-background: #FFFFFF;
 border: 1px solid #E3E1E3;
 box-sizing: border-box;
 border-radius: 10px;
+}
+
+.searchBar input, .searchBar input:focus {
+    background: var(--bg-primary);
 }
 
 .searchBar > * {
@@ -26,6 +27,7 @@ border-radius: 10px;
 .searchImg {
     width: 24px;
     height: 24px;
+    color: var(--text-color);
 }
 
 .searchBar input {

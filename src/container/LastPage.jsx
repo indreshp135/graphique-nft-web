@@ -6,7 +6,7 @@ import "./page.css";
 
 export const LastPage = ({ dark }) => {
   return (
-    <Container style={{ maxWidth: "600px" }}>
+    <Container className="mt-5" style={{ maxWidth: "600px" }}>
       <h1 className="h1">Create New Item</h1>
       <Form>
         <h4 className="h3 mt-4">Upload File</h4>
