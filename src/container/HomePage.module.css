@@ -1,21 +1,14 @@
 .homePage {
   color: var(--text-color);
-  background: var(--bg);
   font-family: Poppins;
-  padding:0;
-  margin: 0;
 }
 
 .bannerContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  background: var(--bg);
   color: var(--text-color);
   font-family: Poppins;
-  padding:0;
-  margin: 0;
 }
 
 .homeBanner {
@@ -29,7 +22,6 @@
   margin: 0 auto;
   margin-bottom: 3rem;
   padding: 0;
-  /* flex-direction: row; */
   position: relative;
 }
 
@@ -68,4 +60,13 @@
 .carouselContainer {
   margin:0;
   padding: 0;
+}
+
+.deck {
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style: none;
 }

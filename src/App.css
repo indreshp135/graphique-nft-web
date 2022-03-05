@@ -11,6 +11,7 @@
   border-radius: 10px;
   font-family: "Poppins", sans-serif;
   border-color: transparent !important;
+  white-space: nowrap;
 }
 
 .btn-btn {
@@ -79,4 +80,8 @@ body::-webkit-scrollbar-thumb {
 
 .hr {
   border-top: 1px solid var(--bg-secondary);
+}
+
+body {
+  overflow-x: hidden;
 }

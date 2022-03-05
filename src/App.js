@@ -59,7 +59,7 @@ const Item = () => {
 
 function App() {
 
-  const dark = false;
+  const dark = true;
 
   return (
     <div className={dark ? "dark" : "light"}>
