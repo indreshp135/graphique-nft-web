@@ -52,10 +52,11 @@
 }
 
 .dark {
-  --bg: #24252d;
-  --bg-secondary: #3b3f4f;
-  --text-color: #ffffff;
-  --bg-tertiary: #2d2e36;
+  --bg: #24252D;
+  --bg-secondary: #3B3F4F;
+  --bg-search:#1B1A21;
+  --text-color: #FFFFFF;
+  --bg-tertiary: #2D2E36;
   background: var(--bg);
 }
 

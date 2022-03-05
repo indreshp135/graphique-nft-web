@@ -55,19 +55,13 @@ width: 100%;
 height: 18px;
 left: 34px;
 top: 3px;
-
-/* Paragraph 3 (Regular) */
-
+background: var(--bg-search)!important;
 font-family: Poppins;
 font-style: normal;
 font-weight: normal;
 font-size: 12px;
 line-height: 18px;
 
-/* identical to box height */
-
-
-/* Grey/1 */
 
 color: #888888;
 border: none;
