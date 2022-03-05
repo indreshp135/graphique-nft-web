@@ -20,17 +20,17 @@ const Item = () => {
 
 function App() {
 
-  const dark = false;
+  const dark = true;
 
   return (
     <div className={dark ? "dark" : "light"}>
       <Header dark={dark}/>
       
       <Switch>
-      <Route path="/" exact component={LastPage} />
-        <Route path="/create" exact component={<Home />} />
-        <Route path="/profile" exact component={<Profile />} />
-        <Route path="/item" exact component={<Item />} />
+      <Route path="/" exact component={LastPage} dark={dark} />
+        <Route path="/create" exact component={Home} />
+        <Route path="/profile" exact component={Profile} />
+        <Route path="/item" exact component={Item} />
         
         </Switch>
       <Footer dark={dark}/>
