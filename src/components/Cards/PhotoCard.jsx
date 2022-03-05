@@ -21,6 +21,7 @@ export const PhotoCard = (props) => {
             <span style={{padding: 2}}>
             {props.like ? <Image src={heartFilled}/> : <Image src={heart}/>}
             </span>
+            {' '}
             <span className={classes.cardBodyLikes}>{props.likes}</span>
           </Col>
         </Row>

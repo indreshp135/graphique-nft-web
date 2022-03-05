@@ -35,6 +35,7 @@
   letter-spacing: 0em;
   overflow: hidden !important;
   text-align: left;
+  white-space: pre-wrap;
 }
 
 .bannerCircle {

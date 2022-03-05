@@ -17,7 +17,7 @@ export const HomePage = props => {
   const [isMobile, setIsMobile] = React.useState(false);
   React.useEffect(() => {
     function handleResize() {
-      if (window.innerWidth < 800) {
+      if (window.innerWidth < 992) {
         setIsMobile(true);
       } else {
         setIsMobile(false);
@@ -58,12 +58,12 @@ export const HomePage = props => {
       rank: 5,
     },
   ];
-  const breakPoints = [
-    { width: 1, itemsToShow: 5 },
-    { width: 550, itemsToShow: 2, itemsToScroll: 2 },
-    { width: 768, itemsToShow: 3 },
-    { width: 1200, itemsToShow: 4 },
-  ];
+  // const breakPoints = [
+  //   { width: 1, itemsToShow: 5 },
+  //   { width: 550, itemsToShow: 2, itemsToScroll: 2 },
+  //   { width: 768, itemsToShow: 3 },
+  //   { width: 1200, itemsToShow: 4 },
+  // ];
   return (
     <Container className={`mt-5 ${classes.homePage}`}>
       <Row className={classes.bannerContainer}>
@@ -75,6 +75,7 @@ export const HomePage = props => {
           <Image className={classes.bannerCircle} src={banner} />
         </div>
       </Row>
+      <h4 className="h3 mt-4 topic">Top Sellers</h4>
       <Row>
         {isMobile ? (
           <div className={classes.mobileCarousel}>
@@ -90,6 +91,7 @@ export const HomePage = props => {
           </Carousel>
         )}
       </Row>
+      <h4 className="h3 mt-4 topic">Hot Bids</h4>
       <div className={classes.deck}>
         <Deck />
       </div>

@@ -10,7 +10,7 @@ import Footer from "./components/Footer/Footer";
 import { ItemPage } from "./ItemPage/ItemPage";
 
 function App() {
-  const [dark , setDark] = React.useState(false);
+  const [dark , setDark] = React.useState(localStorage.getItem("dark"));
 
   return (
     <div className={dark ? "dark" : "light"}>

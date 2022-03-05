@@ -1,9 +1,9 @@
-.rec.rec-arrow {
-  background-color: aliceblue;
+.rec .rec-arrow {
+  background-color: transparent;
 }
 
 .rec.rec-arrow:hover {
-  background-color: var(--primary-l);
+  background-color: black;
 }
 
 .rec.rec-dot {

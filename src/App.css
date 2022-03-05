@@ -156,5 +156,8 @@ body::-webkit-scrollbar-thumb {
   font-size: 24px;
   line-height: 36px;
   color: var(--text-color);
+}
 
+.topic {
+  margin-left: 4rem;
 }

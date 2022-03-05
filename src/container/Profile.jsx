@@ -26,6 +26,7 @@ export const Profile = ({ dark }) => {
             </Dropdown.Menu>
           </Dropdown>
         </div>
+        <h4 className="h3 mt-4 topic">Hot Bids</h4>
         <div className="flow">
           <Deck />
         </div>

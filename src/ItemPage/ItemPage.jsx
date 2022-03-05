@@ -1,16 +1,16 @@
-import { Col, Container, Image, Row, Button } from "react-bootstrap";
+import { Col, Container, Image, Row} from "react-bootstrap";
 import classes from "./Item.module.css";
 import image from "../lucas.png";
 import girl from "../girl.png";
 import { useState } from "react";
 import { CheckModal } from "../Modal/Modal";
 
-export const ItemPage = ({dark}) => {
-    const [index,setIndex] = useState(1);
-    const [openCheck,setOpenCheck] = useState(false);
-    const [openPayment,setOpenPayment] = useState(false);
+export const ItemPage = ({ dark }) => {
+  const [index, setIndex] = useState(1);
+  const [openCheck, setOpenCheck] = useState(false);
+  // const [openPayment, setOpenPayment] = useState(false);
 
-    const onClick = (index) => setIndex(index);
+  const onClick = (index) => setIndex(index);
   return (
     <Container>
       <Row xxl={12}>
@@ -19,11 +19,11 @@ export const ItemPage = ({dark}) => {
             width="575px"
             fluid
             className="br-20 width-575px"
-            style={{borderRadius: "20px", maxWidth:'350px'}}
+            style={{ borderRadius: "20px", maxWidth: "350px" }}
             src={image}
           />
         </Col>
-        <Col  className="br-20 my-5 ">
+        <Col className="br-20 my-5 ">
           <p className={classes.textTitle}>Abstact Smoke Red Blue</p>
           <p className={classes.textSub}>
             From &nbsp;
@@ -58,24 +58,32 @@ export const ItemPage = ({dark}) => {
               marginTop: "26px",
             }}
           >
-            <p onClick={() =>onClick(1)}  className={classes.p} style={{ fontWeight: "600" }}>
+            <p
+              onClick={() => onClick(1)}
+              className={classes.p}
+              style={{ fontWeight: "600" }}
+            >
               Details
             </p>
-            <p onClick={() =>onClick(2)}  className={classes.p}>Offers</p>
-            <p onClick={() =>onClick(3)}  className={classes.p}>History</p>
+            <p onClick={() => onClick(2)} className={classes.p}>
+              Offers
+            </p>
+            <p onClick={() => onClick(3)} className={classes.p}>
+              History
+            </p>
           </div>
           <div
             style={{
               display: "flex",
               flexDirection: "row",
-              marginBottom: "30px",       
+              marginBottom: "30px",
             }}
           >
-            <div className={index===1?classes.line:classes.lineOff} />
+            <div className={index === 1 ? classes.line : classes.lineOff} />
             <div className={classes.lineGap} />
-            <div className={index===2?classes.line:classes.lineOff} />
+            <div className={index === 2 ? classes.line : classes.lineOff} />
             <div className={classes.lineGap} />
-            <div className={index===3?classes.line:classes.lineOff} />
+            <div className={index === 3 ? classes.line : classes.lineOff} />
             <div className={classes.lineSelect} />
           </div>
           <p className={classes.p}>
@@ -90,15 +98,27 @@ export const ItemPage = ({dark}) => {
               justifyContent: "space-around",
               alignItems: "center",
               padding: "30px",
-              gap:"25px"
+              gap: "25px",
             }}
           >
-            <button onClick={()=>setOpenCheck(true)} className={`${classes.buttonCancel} btn-primary`}> Buy for 4.5 ETH</button>
-            <button className={`${classes.buttonCancel} btn-btn`}>Cancel</button>
+            <button
+              onClick={() => setOpenCheck(true)}
+              className={`${classes.buttonCancel} btn-primary`}
+            >
+              {" "}
+              Buy for 4.5 ETH
+            </button>
+            <button className={`${classes.buttonCancel} btn-btn`}>
+              Cancel
+            </button>
           </div>
         </Col>
       </Row>
-      <CheckModal dark={dark} show={openCheck} onHide={()=>setOpenCheck(false)}/>
+      <CheckModal
+        dark={dark}
+        show={openCheck}
+        onHide={() => setOpenCheck(false)}
+      />
     </Container>
   );
 };
