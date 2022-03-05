@@ -1,0 +1,47 @@
+/* Rectangle 17 */
+.c1{
+    /* White */
+    background: #FFFFFF;
+    /* Gray/2 */
+    border: 1px dashed #888888;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.t1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2D2E36;
+    margin: 40px;
+}
+
+.sp-1 {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.h1{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+
+    color: #2D2E36;
+
+}
+
+.h3{
+/* Heading 2 */
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #2D2E36;
+
+}
