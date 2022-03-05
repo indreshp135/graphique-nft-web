@@ -45,10 +45,19 @@
 }
 
 .light {
+<<<<<<< Updated upstream
   --bg: #e5e5e5;
   --bg-secondary: #f5f5f5;
   --bg-tertiary: #ffffff;
   --text-color: #2d2e36;
+=======
+  --bg-border: 1px solid #E3E1E3;
+  --bg: #E5E5E5;
+  --bg-search: #FFFFFF;
+  --bg-secondary: #F5F5F5;
+  --bg-tertiary: #FFFFFF;
+  --text-color: #2D2E36;
+>>>>>>> Stashed changes
 }
 
 .dark {
@@ -57,6 +66,7 @@
   --bg-search:#1B1A21;
   --text-color: #FFFFFF;
   --bg-tertiary: #2D2E36;
+  --bg-border: 1px solid #2D2E36;
   background: var(--bg);
 }
 

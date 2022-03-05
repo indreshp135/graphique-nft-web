@@ -1,10 +1,11 @@
 .userCard {
+  display: inline-flex;
   margin: 1rem;
   width: 12rem !important;
   color: var(--text-color);
   background: var(--bg-tertiary);
   border-radius: 1.5rem;
-  border: 1.5px solid #E3E1E3;
+  border: var(--bg-border);
   font-family: Poppins;
 }
 
@@ -74,4 +75,7 @@ b {
   background-color: #00B247;
   top: 4.5rem;
   right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
