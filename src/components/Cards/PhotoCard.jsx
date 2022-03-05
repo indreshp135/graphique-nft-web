@@ -15,7 +15,7 @@ export const PhotoCard = (props) => {
         </Row>
         <Row className={classes.cardBodyDesc}>
           <Col style={{padding: 0}}>
-          <b>{props.price}</b>ETH
+          <b>{props.price}</b> ETH
           </Col>
           <Col className={classes.cardBodyLikes}>
             <span style={{padding: 2}}>

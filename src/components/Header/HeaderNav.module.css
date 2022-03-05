@@ -21,7 +21,7 @@ a {
   text-decoration: none;
 }
 
-.navLinksLight {
+.navLinks {
   color: var(--bg-color);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -29,7 +29,7 @@ a {
 }
 
 .navLinksDark {
-  color: white;
+  color: var(--bg-color);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   white-space: nowrap;

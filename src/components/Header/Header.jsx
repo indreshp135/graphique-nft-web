@@ -3,10 +3,11 @@ import classes from "./Header.module.css";
 import SearchBar from "./SearchBar";
 import HeaderNav from "./HeaderNav";
 
-const Header = ({dark}) => {
+const Header = ({dark, setDark}) => {
   return (
     <div className={classes.header_d}>
       <svg
+        onClick={() => setDark(!dark)}
         width="168"
         height="32"
         viewBox="0 0 168 32"

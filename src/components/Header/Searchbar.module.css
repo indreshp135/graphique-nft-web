@@ -1,72 +1,73 @@
 .searchBarLight {
-    background: var(--bg-primary);
-    display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0 19px 0 15px;
+  background: var(--bg-primary);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 19px 0 15px;
 
-position: static;
-width: 627px;
-height: 40px;
-margin: auto 10px;
-top: 0px;
+  position: static;
+  width: 627px;
+  height: 40px;
+  margin: auto 10px;
+  top: 0px;
 
-border: 1px solid #E3E1E3;
-box-sizing: border-box;
-border-radius: 10px;
+  border: 1px solid #e3e1e3;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .searchBarDark {
-    background: #1B1A21;
-    
-    display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0 19px 0 15px;
+  background: #1b1a21;
 
-position: static;
-width: 627px;
-height: 40px;
-margin: auto 10px;
-top: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 19px 0 15px;
 
+  position: static;
+  width: 627px;
+  height: 40px;
+  margin: auto 10px;
+  top: 0px;
 
-box-sizing: border-box;
-border-radius: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
-.searchInput, .searchInput:focus {
-    background: none;
+.searchInput,
+.searchInput:focus {
+  background: none;
 }
 
-.searchBarLight, .searchBarDark > * {
-    margin: 0 5px;
+.searchBarLight,
+.searchBarDark > * {
+  margin: 0 5px;
 }
 
 .searchImg {
-    width: 24px;
-    height: 24px;
-    color: var(--text-color);
+  width: 24px;
+  height: 24px;
+  color: var(--text-color);
+  margin-right: 10px;
 }
 
 .searchInput {
-    position: static;
-width: 100%;
-height: 18px;
-left: 34px;
-top: 3px;
-background: var(--bg-search)!important;
-font-family: Poppins;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 18px;
+  position: static;
+  width: 100%;
+  height: 18px;
+  left: 34px;
+  top: 3px;
+  background: var(--bg-search) !important;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
 
-
-color: #888888;
-border: none;
+  color: #888888;
+  border: none;
 }
 
 .searchInput:focus {
-    outline: none;
+  outline: none;
 }

@@ -8,22 +8,17 @@ import { Route, Switch } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import { ItemPage } from "./ItemPage/ItemPage";
-import { PhotoCard } from "./components/Cards/PhotoCard";
-
-import img from './images/abc.png';
-import { UserCard } from "./components/Cards/UserCard";
-// import user1 from './images/user1.svg';
 
 function App() {
-  const dark = true;
+  const [dark , setDark] = React.useState(false);
 
   return (
     <div className={dark ? "dark" : "light"}>
-      <Header dark={dark} />
+      <Header dark={dark} setDark={setDark} />
 
       <Switch>
       <Route path="/" exact render={()=><HomePage dark={dark}/>}/>
-        {/* <Route path="/create" exact component={Home } /> */}
+        <Route path="/create" exact component={LastPage } />
         <Route path="/profile" exact render={()=><Profile dark={dark}/>} />
         <Route path="/item" exact render={()=><ItemPage dark={dark} />}/>
       </Switch>

@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap");
 
 * {
-  font-family: Roboto !important;
-  font-weight: 300 !important;
+  /* font-family: Roboto !important;
+  font-weight: 300 !important; */
   white-space: nowrap;
 }
 
@@ -67,8 +67,7 @@ body {
   }
 }
 
-@media (hover:hover) {
-
+@media (hover: hover) {
   /* width */
   ::-webkit-scrollbar {
     width: 8px;

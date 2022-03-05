@@ -51,11 +51,9 @@
   margin-right: 10px;
 }
 
-
 .oneOneThree input:focus {
   outline: none;
 }
-
 
 .two {
   width: 100%;
@@ -70,7 +68,7 @@
 }
 
 .twoOne {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .twoTwo {
@@ -84,6 +82,16 @@
 
 .ctn {
   margin-top: 10px;
+  padding-top: 30px;
   border-top: 1px solid var(--bg-secondary);
   color: var(--text-color);
+}
+
+.oneTwotitle ~ a {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  font-feature-settings: "salt" on, "liga" off;
 }

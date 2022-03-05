@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./HeaderNav.module.css";
-import { Button, Navbar, Container, Nav } from "react-bootstrap";
+import { Button, Navbar, Nav } from "react-bootstrap";
 
 const HeaderNav = ({ dark }) => {
   return (

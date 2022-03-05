@@ -11,7 +11,6 @@ import user4 from "../girl.png";
 import user5 from "../girl.png";
 import { UserCard } from "../components/Cards/UserCard";
 import { Deck } from "../components/Deck/Deck";
-import { propTypes } from "react-bootstrap/esm/Image";
 import "./homepage.css";
 
 export const HomePage = props => {
@@ -93,6 +92,9 @@ export const HomePage = props => {
       </Row>
       <div className={classes.deck}>
         <Deck />
+      </div>
+      <div className="d-flex justify-content-center">
+        <button className="btn-btn load-more-btn">Load More</button>
       </div>
     </Container>
   );
