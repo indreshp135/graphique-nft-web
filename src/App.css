@@ -19,7 +19,7 @@
   background: var(--bg);
 }
 
-.dark input{
+.dark input, .dark select, .dark textarea, .dark input:focus, .dark select:focus, .dark textarea:focus {
   background: var(--bg-secondary);
   color: var(--text-color);
   border: none!important;
@@ -27,4 +27,9 @@
 
 .dark ::placeholder {
   color: var(--text-color);
+}
+
+.c1:hover {
+  background: var(--bg-secondary);
+  transform: scale(1.01);
 }

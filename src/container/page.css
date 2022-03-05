@@ -49,8 +49,28 @@
     border-bottom-left-radius: 0;
 }
 
+.dark .drop-btn{
+    border-left: none;
+    background: var(--bg-secondary);
+    color: var(--text-color);
+}
+
 .bd-r{
     border-right: none;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .t1, ::placeholder{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .h1 {
+        display: none;
+    }
 }
