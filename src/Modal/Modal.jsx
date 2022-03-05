@@ -1,19 +1,11 @@
 import {Button, Modal,Container, Image} from "react-bootstrap";
-import {useState} from "react";
 import image from "../lucas.png"
-const Home = () =>   {
-    const [show, setShow] = useState(true);
-  
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-  
-    return (
-      <>
-        <Button variant="primary" onClick={handleShow}>
-          Launch modal
-        </Button>
 
-    <Modal style={{ borderRadius:"20px"}}  show={show} onHide={handleClose}>
+export const Modal1 = (props) =>   {
+ 
+    return (
+
+    <Modal  {...props} aria-labelledby="contained-modal-title-vcenter" style={{ borderRadius:"20px",width:"600px"}} >
       <Modal.Header style={{
           display: "flex",
           justifyContent: "center",
@@ -124,7 +116,7 @@ const Home = () =>   {
              height:"40px", 
              borderRadius: "10px",
              background: "linear-gradient(101.12deg, #EB1484 27.35%, #C91CC3 99.99%, #C81CC5 100%, #C81CC5 100%)"}}
-            onClick={handleClose}>Checkout</Button>    
+            onClick={props.onHide}>Checkout</Button>    
          <Button style={{
              fontWeight:"600",
              fontFamily:"poppins",
@@ -136,12 +128,9 @@ const Home = () =>   {
              borderRadius: "10px",
              background:"white",
              color: "#DA18A3"}}
-            onClick={handleClose}>Cancel</Button>    
+            onClick= {props.onHide}>Cancel</Button>    
       </Modal.Footer>
     </Modal>
-      </>
     );
     
 }
-
-export default Home;
