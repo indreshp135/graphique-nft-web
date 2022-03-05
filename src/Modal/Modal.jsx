@@ -5,7 +5,11 @@ export const Modal1 = (props) =>   {
  
     return (
 
+<<<<<<< HEAD
     <Modal centered open={true}  {...props} aria-labelledby="contained-modal-title-vcenter" style={{ borderRadius:"20px"}} >
+=======
+    <Modal  {...props} aria-labelledby="contained-modal-title-vcenter" style={{ borderRadius:"20px",width:"600px"}} >
+>>>>>>> 71b29f0 (modal)
       <Modal.Header style={{
           display: "flex",
           justifyContent: "center",
@@ -128,7 +132,10 @@ export const Modal1 = (props) =>   {
              borderRadius: "10px",
              background:"white",
              color: "#DA18A3"}}
+<<<<<<< HEAD
              className="btn-bdr"
+=======
+>>>>>>> 71b29f0 (modal)
             onClick= {props.onHide}>Cancel</Button>    
       </Modal.Footer>
     </Modal>
