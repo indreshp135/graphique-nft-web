@@ -42,7 +42,7 @@
   font-family: "poppins";
   color: var(--text-color);
   font-size: 14px;
-  font-weight: "600";
+  font-weight: 600;
   text-align: start;
   flex-grow: 0;
 }

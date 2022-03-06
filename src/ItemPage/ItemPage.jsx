@@ -33,7 +33,7 @@ export const ItemPage = ({ dark }) => {
           <p className={classes.textTitle}>Abstact Smoke Red Blue</p>
           <p className={classes.textSub}>
             From &nbsp;
-            <span className={classes.textSubBold}>4.5 ETH &nbsp;</span>
+            <span className={classes.textSubBold}>4.5 ETH ᛫ &nbsp;</span>
             20 of 25 available
           </p>
           <p className={classes.textMini}>Creator</p>
@@ -67,14 +67,20 @@ export const ItemPage = ({ dark }) => {
             <p
               onClick={() => onClick(1)}
               className={classes.p}
-              style={{ fontWeight: "600" }}
+              style={{ fontWeight: index === 1 ? "600":"normal" }}
             >
               Details
             </p>
-            <p onClick={() => onClick(2)} className={classes.p}>
+            <p onClick={() => onClick(2)} 
+               className={classes.p}
+               style={{ fontWeight: index === 2 ? "600":"normal" }}
+            >
               Offers
             </p>
-            <p onClick={() => onClick(3)} className={classes.p}>
+            <p onClick={() => onClick(3)}
+               className={classes.p}
+               style={{ fontWeight: index === 3 ? "600":"normal" }}
+            >
               History
             </p>
           </div>
