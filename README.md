@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Site is Hosted at
-[Graphique-nft](https://gfqe-nft.web.app/item)
+[Graphique-nft](https://gfqe-nft.web.app/)
 
 * User can switch between dark and light mode by clicking on the graphique logo on the header.
 
