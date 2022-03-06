@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "./static/css/main.be622205.css",
-    "main.js": "./static/js/main.4cd99010.js",
-    "static/js/787.a921ebc8.chunk.js": "./static/js/787.a921ebc8.chunk.js",
-    "static/media/minbg.jpg": "./static/media/minbg.34263c0f808615c09de6.jpg",
-    "static/media/lucas.jpg": "./static/media/lucas.75f181badf67440faa32.jpg",
-    "static/media/abc.png": "./static/media/abc.47bd3480c29586a96866.png",
-    "static/media/userImg1.jpg": "./static/media/userImg1.8930e8c79bca3f8e9248.jpg",
-    "index.html": "./index.html",
-    "static/media/heart.svg": "./static/media/heart.ccb03ed7f8bcd044515d75171954b65f.svg",
-    "static/media/img.svg": "./static/media/img.970502258bcdcb5729243ab7cade0e5a.svg",
-    "static/media/img-dark.svg": "./static/media/img-dark.f4857493e290b829720eb29396b3412f.svg",
-    "static/media/heartfilled.svg": "./static/media/heartfilled.5b3b5390e6e04967ca9b8eac74aa055b.svg",
-    "static/media/homeBanner.svg": "./static/media/homeBanner.6710fb5be2a61eaf57e9e7068ce892f2.svg",
-    "static/media/tick.svg": "./static/media/tick.8e85c953e34690efad19f00d999380f4.svg",
-    "static/media/tickwhite.svg": "./static/media/tickwhite.6bd659d38b98341cbbc846084e9c04d4.svg",
-    "static/media/circle2.svg": "./static/media/circle2.9e2ffb8b8a16d9280d28c830c47cbc6d.svg",
-    "main.be622205.css.map": "./static/css/main.be622205.css.map",
-    "main.4cd99010.js.map": "./static/js/main.4cd99010.js.map",
-    "787.a921ebc8.chunk.js.map": "./static/js/787.a921ebc8.chunk.js.map"
+    "main.css": "/graphique-nft-web/static/css/main.be622205.css",
+    "main.js": "/graphique-nft-web/static/js/main.1972e010.js",
+    "static/js/787.a921ebc8.chunk.js": "/graphique-nft-web/static/js/787.a921ebc8.chunk.js",
+    "static/media/minbg.jpg": "/graphique-nft-web/static/media/minbg.34263c0f808615c09de6.jpg",
+    "static/media/lucas.jpg": "/graphique-nft-web/static/media/lucas.75f181badf67440faa32.jpg",
+    "static/media/abc.png": "/graphique-nft-web/static/media/abc.47bd3480c29586a96866.png",
+    "static/media/userImg1.jpg": "/graphique-nft-web/static/media/userImg1.8930e8c79bca3f8e9248.jpg",
+    "index.html": "/graphique-nft-web/index.html",
+    "static/media/heart.svg": "/graphique-nft-web/static/media/heart.ccb03ed7f8bcd044515d75171954b65f.svg",
+    "static/media/img.svg": "/graphique-nft-web/static/media/img.970502258bcdcb5729243ab7cade0e5a.svg",
+    "static/media/img-dark.svg": "/graphique-nft-web/static/media/img-dark.f4857493e290b829720eb29396b3412f.svg",
+    "static/media/heartfilled.svg": "/graphique-nft-web/static/media/heartfilled.5b3b5390e6e04967ca9b8eac74aa055b.svg",
+    "static/media/homeBanner.svg": "/graphique-nft-web/static/media/homeBanner.6710fb5be2a61eaf57e9e7068ce892f2.svg",
+    "static/media/tick.svg": "/graphique-nft-web/static/media/tick.8e85c953e34690efad19f00d999380f4.svg",
+    "static/media/tickwhite.svg": "/graphique-nft-web/static/media/tickwhite.6bd659d38b98341cbbc846084e9c04d4.svg",
+    "static/media/circle2.svg": "/graphique-nft-web/static/media/circle2.9e2ffb8b8a16d9280d28c830c47cbc6d.svg",
+    "main.be622205.css.map": "/graphique-nft-web/static/css/main.be622205.css.map",
+    "main.1972e010.js.map": "/graphique-nft-web/static/js/main.1972e010.js.map",
+    "787.a921ebc8.chunk.js.map": "/graphique-nft-web/static/js/787.a921ebc8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.be622205.css",
-    "static/js/main.4cd99010.js"
+    "static/js/main.1972e010.js"
   ]
 }
