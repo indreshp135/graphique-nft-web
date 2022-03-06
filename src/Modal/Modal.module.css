@@ -32,6 +32,7 @@
   font-family: "poppins";
   color: var(--text-color);
   font-size: 16px;
+  white-space: pre-wrap;
 }
 .num {
   font-family: "poppins";

@@ -1,5 +1,5 @@
 import React from "react";
-import cityImg from "../../images/citybg.png";
+import cityImg from "../../images/minbg.jpg";
 import classes from "./ProfileHeader.module.css";
 import user from "../../images/userImg1.png";
 

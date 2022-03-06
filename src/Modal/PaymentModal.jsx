@@ -30,14 +30,12 @@ export const PaymentModal = (props) => {
             justifyContent: "center",
             paddingTop: "25px",
             paddingBottom: "16px",
-            width: "365px",
           }}
         >
           <Image
             style={{
               alignSelf: "center",
               marginBottom: "30px",
-              width: "211px",
               height: "206px",
             }}
             src={image}

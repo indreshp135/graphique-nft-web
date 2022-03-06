@@ -26,29 +26,6 @@
   background: transparent;
 }
 
-.light {
-  --bg-border: 1px solid #e3e1e3;
-  --bg: #e5e5e5;
-  --bg-search: #ffffff;
-  --bg-secondary: #f5f5f5;
-  --bg-tertiary: #ffffff;
-  --text-color: #2d2e36;
-  --under-line: #e3e1e3;
-  --bg-color: #4F4F4F;
-}
-
-.dark {
-  --bg: #24252d;
-  --bg-secondary: #3b3f4f;
-  --bg-search: #1b1a21;
-  --text-color: #ffffff;
-  --bg-tertiary: #2d2e36;
-  --bg-border: 1px solid #2d2e36;
-  --under-line: #3b3f4f;
-  background: var(--bg);
-  --bg-color: #4F4F4F;
-}
-
 .dark input,
 .dark select,
 .dark textarea,

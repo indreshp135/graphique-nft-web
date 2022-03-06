@@ -22,7 +22,7 @@ a {
 }
 
 .navLinks {
-  color: var(--bg-color);
+  color: var(--text-color);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   white-space: nowrap;

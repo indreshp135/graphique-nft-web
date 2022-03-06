@@ -121,7 +121,7 @@ export const CheckModal = (props) => {
           padding: "30px",
         }}
       >
-         <button onClick={props.onHide} className={`${classes.buttonCancel} btn-primary`}> Checkout</button>
+         <button onClick={props.onOpen} className={`${classes.buttonCancel} btn-primary`}> Checkout</button>
             <button onClick={props.onHide} className={`${classes.buttonCancel} btn-btn`}>Cancel</button>
       </Modal.Footer>
     </Modal>

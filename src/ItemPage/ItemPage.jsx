@@ -4,11 +4,17 @@ import image from "../lucas.png";
 import girl from "../girl.png";
 import { useState } from "react";
 import { CheckModal } from "../Modal/Modal";
+import { PaymentModal } from "../Modal/PaymentModal";
 
 export const ItemPage = ({ dark }) => {
   const [index, setIndex] = useState(1);
   const [openCheck, setOpenCheck] = useState(false);
-  // const [openPayment, setOpenPayment] = useState(false);
+  const [openPayment, setOpenPayment] = useState(false);
+
+  const pay = () => {
+    setOpenPayment(true);
+    setOpenCheck(false);
+  };
 
   const onClick = (index) => setIndex(index);
   return (
@@ -117,8 +123,15 @@ export const ItemPage = ({ dark }) => {
       <CheckModal
         dark={dark}
         show={openCheck}
+        onOpen={() => pay()}
         onHide={() => setOpenCheck(false)}
       />
+      <PaymentModal
+        dark={dark}
+        show={openPayment}
+        onHide={() => setOpenPayment(false)}
+      />
+
     </Container>
   );
 };
