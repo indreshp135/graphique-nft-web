@@ -2,7 +2,6 @@ import React from "react";
 import classes from "./HeaderNav.module.css";
 import "./HeaderNav.css";
 import { Button, Navbar, Nav, Modal } from "react-bootstrap";
-import { Link } from "react-router-dom";
 
 const HeaderNav = ({ dark }) => {
   const [show, setShow] = React.useState(false);
@@ -29,18 +28,18 @@ const HeaderNav = ({ dark }) => {
               <Nav.Link className="z1" href="/">
                 <span className={classes.navLinks}>Following</span>
               </Nav.Link>
-              <Button href="/create" className="z1 btn btn-primary px-3 me-1">
+              <Button href="/create" className="btn btn-primary px-3 me-1">
                 Create
               </Button>
-              <button className="z1 btn-btn px-3">
+              <button className="btn-btn px-3">
                 <a href="#footer">Connect</a>
               </button>
             </Nav>
           </Navbar.Collapse>
         </div>
       </Navbar>
-      <Modal show={show} fullscreen={true} onHide={() => setShow(false)}>
-        <Modal.Header closeButton>
+      <Modal dark show={show} fullscreen={true} onHide={() => setShow(false)}>
+        <Modal.Header closeButton className={dark?classes.dark_modal:""} id="frg">
           <Modal.Title>
             <svg
               width="21"
@@ -56,7 +55,7 @@ const HeaderNav = ({ dark }) => {
             </svg>
           </Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className={dark?classes.dark_modal:""}>
           <Nav.Link className="z1" href="/">
             <span className={classes.navLinks}>Explore</span>
           </Nav.Link>
@@ -67,11 +66,11 @@ const HeaderNav = ({ dark }) => {
             <span className={classes.navLinks}>Following</span>
           </Nav.Link>
         </Modal.Body>
-        <Modal.Footer>
-          <Button href="/create" className="z1 btn btn-primary px-3 me-1">
+        <Modal.Footer className={dark?classes.dark_modal:""} style={{justifyContent:"space-evenly"}}>
+          <Button href="/create" className="btn btn-primary rtn p-3 me-1">
             Create
           </Button>
-          <button className="z1 btn-btn px-3">
+          <button className="btn-btn rtn p-3">
             <a href="#footer">Connect</a>
           </button>
         </Modal.Footer>

@@ -138,3 +138,7 @@ body::-webkit-scrollbar-thumb {
 .topic {
   margin-left: 4rem;
 }
+
+#frg .btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}

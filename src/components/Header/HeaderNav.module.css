@@ -56,3 +56,9 @@ a {
   background: var(--bg-secondary);
   border-color: "#DA18A3";
 }
+
+.dark_modal {
+  background-color: #24252D;
+  color: #fff;
+  border-color: #3B3F4F;
+}

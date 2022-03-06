@@ -36,6 +36,7 @@ export const PaymentModal = (props) => {
             style={{
               alignSelf: "center",
               marginBottom: "30px",
+              width: "211px",
               height: "206px",
             }}
             src={image}
