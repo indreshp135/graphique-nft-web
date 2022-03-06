@@ -42,6 +42,7 @@ export const PaymentModal = props => {
               width: "211px",
               height: "206px",
             }}
+            rounded
             src={image}
           />
           <p style={{ textAlign: "center" }} className={classes.textSub}>
@@ -65,7 +66,7 @@ export const PaymentModal = props => {
       >
         <div className={classes.shareTitle}>Share</div>
 
-        <div className={classes.twoTwo}>
+        <div className={classes.twoTwo} style={{cursor:"pointer"}}>
           <svg
             width="25"
             height="25"

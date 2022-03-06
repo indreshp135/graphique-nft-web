@@ -70,7 +70,7 @@ export const CheckModal = props => {
                 display: "flex",
               }}
             >
-              <Image src={image} />
+              <Image src={image} rounded fluid style={{maxWidth:"160px"}} />
               <Container
                 style={{
                   display: "flex",

@@ -11,7 +11,7 @@ import { ItemPage } from "./ItemPage/ItemPage";
 
 function App() {
   // localStorage.setItem("dark", false);
-  const [dark , setDark] = React.useState(localStorage.getItem("dark"));
+  const [dark , setDark] = React.useState(localStorage.getItem("dark")==='false'?false:true);
   // setDark(false);
   return (
     <div className={dark ? "dark" : "light"}>
