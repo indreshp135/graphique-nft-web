@@ -1,0 +1,8 @@
+.z1 {
+  z-index: 1;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #da18a3;
+}

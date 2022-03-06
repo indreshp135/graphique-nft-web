@@ -72,3 +72,8 @@ b {
 .cardBodyLikes {
   text-align: right;
 }
+
+.clickable :hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

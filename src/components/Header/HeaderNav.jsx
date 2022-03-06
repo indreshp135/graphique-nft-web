@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./HeaderNav.module.css";
+import './HeaderNav.css'
 import { Button, Navbar, Nav } from "react-bootstrap";
 
 const HeaderNav = ({ dark }) => {
@@ -17,23 +18,23 @@ const HeaderNav = ({ dark }) => {
         />
         <Navbar.Collapse id="responsive-navbar-nav navbarcollapse">
           <Nav>
-            <Nav.Link href="/">
-              <span className={dark ? classes.navLinksDark : classes.navLinks}>
+            <Nav.Link className="z1" href="/">
+              <span className={classes.navLinks}>
                 Explore
               </span>
             </Nav.Link>
-            <Nav.Link href="/profile">
-              <span className={dark ? classes.navLinksDark : classes.navLinks}>
+            <Nav.Link className="z1" href="/profile">
+              <span className={classes.navLinks}>
                 My Items
               </span>
             </Nav.Link>
-            <Nav.Link href="/">
-              <span className={dark ? classes.navLinksDark : classes.navLinks}>
+            <Nav.Link className="z1" href="/">
+              <span className={classes.navLinks}>
                 Following
               </span>
             </Nav.Link>
-            <Button className="btn btn-primary px-3 me-1">Create</Button>
-            <button className="btn-btn px-3">Connect</button>
+            <Button href="/create" className="z1 btn btn-primary px-3 me-1">Create</Button>
+            <button className="z1 btn-btn px-3"><a href="#footer">Connect</a></button>
           </Nav>
         </Navbar.Collapse>
       </div>

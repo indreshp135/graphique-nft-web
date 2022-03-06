@@ -10,9 +10,9 @@
 
 .navbar {
   align-self: flex-start;
-  position: absolute;
+  /* position: absolute;
   position: sticky;
-  top: 0;
+  top: 0; */
 }
 
 a {
@@ -28,12 +28,12 @@ a {
   white-space: nowrap;
 }
 
-.navLinksDark {
+/* .navLinksDark {
   color: var(--bg-color);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   white-space: nowrap;
-}
+} */
 
 .buttonCreate {
   margin-left: 1rem;

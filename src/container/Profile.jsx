@@ -28,7 +28,7 @@ export const Profile = ({ dark }) => {
         </div>
         <h4 className="h3 mt-4 topic">Hot Bids</h4>
         <div className="flow">
-          <Deck />
+          <Deck clickable={false}/>
         </div>
         <div className="d-flex justify-content-center">
           <button className="btn-btn load-more-btn">Load More</button>

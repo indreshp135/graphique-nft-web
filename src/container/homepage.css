@@ -1,9 +1,11 @@
 .rec .rec-arrow {
   background-color: transparent;
+  border: 1px solid var(--text-color)
 }
 
-.rec.rec-arrow:hover {
-  background-color: black;
+.rec .rec-arrow:hover {
+  background-color: transparent !important;
+  color: var(--text-color);
 }
 
 .rec.rec-dot {
@@ -16,3 +18,5 @@
   display: none;
   background-color: var(--primary-l);
 }
+
+/* TODO: ADD PROPER BUTTON CSS */

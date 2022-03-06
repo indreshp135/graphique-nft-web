@@ -58,12 +58,6 @@ export const HomePage = props => {
       rank: 5,
     },
   ];
-  // const breakPoints = [
-  //   { width: 1, itemsToShow: 5 },
-  //   { width: 550, itemsToShow: 2, itemsToScroll: 2 },
-  //   { width: 768, itemsToShow: 3 },
-  //   { width: 1200, itemsToShow: 4 },
-  // ];
   return (
     <Container className={`mt-5 ${classes.homePage}`}>
       <Row className={classes.bannerContainer}>
@@ -93,7 +87,7 @@ export const HomePage = props => {
       </Row>
       <h4 className="h3 mt-4 topic">Hot Bids</h4>
       <div className={classes.deck}>
-        <Deck />
+        <Deck clickable={true}/>
       </div>
       <div className="d-flex justify-content-center">
         <button className="btn-btn load-more-btn">Load More</button>
