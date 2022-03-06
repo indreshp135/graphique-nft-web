@@ -9,6 +9,18 @@
   color: #da18a3 !important;
 }
 
+.rec .rec-arrow-left {
+  z-index: 1;
+  position:relative;
+  left: 3rem
+}
+
+.rec .rec-arrow-right {
+  z-index: 1;
+  position:relative;
+  right: 3rem
+}
+
 .rec .rec-arrow:disabled {
   background-color: transparent !important;
   color: var(--text-color) !important;
