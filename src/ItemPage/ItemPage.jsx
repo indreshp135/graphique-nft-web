@@ -1,6 +1,6 @@
 import { Col, Container, Image, Row} from "react-bootstrap";
 import classes from "./Item.module.css";
-import image from "../lucas.png";
+import image from "../lucas.jpg";
 import girl from "../girl.png";
 import { useState } from "react";
 import { CheckModal } from "../Modal/Modal";

@@ -1,5 +1,5 @@
-import { Button, Modal, Container, Image } from "react-bootstrap";
-import image from "../lucas.png";
+import {  Modal, Container, Image } from "react-bootstrap";
+import image from "../lucas.jpg";
 import classes from "./Modal.module.css";
 
 export const PaymentModal = props => {
