@@ -3,7 +3,7 @@ import React from "react";
 import image from "../lucas.jpg";
 import classes from "./Modal.module.css";
 
-export const CheckModal = props => {
+export const CheckModal = (props) => {
   const [isMobile, setIsMobile] = React.useState(false);
   React.useEffect(() => {
     function handleResize() {
@@ -70,8 +70,10 @@ export const CheckModal = props => {
                 display: "flex",
               }}
             >
-              <Image src={image} rounded fluid style={{maxWidth:"160px"}} />
-              <Container
+              <div className="d-flex align-items-center">
+              <Image src={image} rounded fluid style={!isMobile?{ maxWidth: "160px" }:{maxHeight:"52px"}} />
+              </div>
+              <div
                 style={{
                   display: "flex",
                   flexDirection: "column",
@@ -80,17 +82,19 @@ export const CheckModal = props => {
               >
                 <div className={classes.cardTitle}>Mia Ayana</div>
                 <div className={classes.cardSub}>Abstract Smoke Red Blue</div>
-              </Container>
-            </div>
-            <div
-              style={{
-                display: "flex",
-              }}
-            >
-              <p className={classes.num}>
-                4.5&nbsp;
-                <span className={classes.unit}>ETH</span>
-              </p>
+              </div>
+
+              <div
+                style={{
+                  display: "flex",
+                }}
+                className="d-flex align-items-center"
+              >
+                <p className={classes.num}>
+                  4.5&nbsp;
+                  <span className={classes.unit}>ETH</span>
+                </p>
+              </div>
             </div>
           </Container>
           <Container

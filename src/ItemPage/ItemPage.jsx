@@ -23,14 +23,16 @@ export const ItemPage = ({ dark }) => {
         <Col className="d-flex justify-content-evenly my-5 align-items-center">
           <Image
             width="575px"
-            fluid
-            className="br-20 width-575px"
-            style={{ borderRadius: "20px", maxWidth: "350px" }}
+            className="br-20 mx-5 width-575px"
+            style={{ borderRadius: "20px" }}
             src={image}
           />
         </Col>
         <Col className="br-20 my-5 ">
-          <p className={classes.textTitle}>Abstact Smoke Red Blue</p>
+          <div className="d-flex flex-row justify-content-between">
+          <p className={classes.textTitle}>Abstact Smoke Red Blue</p> 
+          <span className="heart-92">&#9829; 92</span>
+          </div>
           <p className={classes.textSub}>
             From &nbsp;
             <span className={classes.textSubBold}>4.5 ETH ᛫ &nbsp;</span>

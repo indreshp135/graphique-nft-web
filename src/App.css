@@ -124,10 +124,10 @@ body::-webkit-scrollbar-thumb {
   order: 2;
   flex-grow: 0;
   margin: 60px 0px;
-  transform : scale(1.01);
+  transform: scale(1.01);
 }
 
-.h3{
+.h3 {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
@@ -142,4 +142,21 @@ body::-webkit-scrollbar-thumb {
 
 #frg .btn-close {
   filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+#checkModalMobile {
+  top: 100%;
+  padding: 0;
+  transform: translate(0px, -100%);
+}
+
+.heart-92 {
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  padding: 10px 20px;
+  border-radius: 22px;
+
+  width: 80px;
+  height: 40px;
+
 }
