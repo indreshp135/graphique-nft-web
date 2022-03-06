@@ -5,6 +5,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Site is Hosted at
 [Graphique-nft](https://gfqe-nft.web.app/item)
 
+* User can switch between dark and light mode by clicking on the graphique logo on the header.
+
 ## Available Scripts
 
 In the project directory, you can run:
