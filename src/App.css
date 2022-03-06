@@ -124,6 +124,7 @@ body::-webkit-scrollbar-thumb {
   order: 2;
   flex-grow: 0;
   margin: 60px 0px;
+  transform : scale(1.01);
 }
 
 .h3{
