@@ -10,7 +10,7 @@ import { useHistory } from "react-router-dom";
 export const PhotoCard = (props) => {
   let history = useHistory();
   function handleClick(clickable) {
-  
+    
     if(clickable) {
       history.push("/item");
     }
