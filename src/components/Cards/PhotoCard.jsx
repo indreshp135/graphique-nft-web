@@ -3,10 +3,20 @@ import { Card, Container, Row, Col, Image } from "react-bootstrap";
 import classes from './PhotoCard.module.css';
 import heart from '../../images/heart.svg';
 import heartFilled from '../../images/heartfilled.svg';
+import { useHistory } from "react-router-dom";
+
+
 
 export const PhotoCard = (props) => {
+  let history = useHistory();
+  function handleClick(clickable) {
+  
+    if(clickable) {
+      history.push("/item");
+    }
+  }
   return (
-    <Card className={props.clickable ? classes.photoCard : `${classes.clickable} ${classes.photoCard}`}>
+    <Card onClick={() => handleClick(props.clickable)} className={props.clickable ? `${classes.clickable} ${classes.photoCard}` : classes.photoCard}>
       <Card.Img className={classes.cardImage} variant="top" src={props.photo} />
       <Card.Body className={classes.cardBody}>
         <Container fluid style={{padding : 0}}>

@@ -1,11 +1,17 @@
 .rec .rec-arrow {
   background-color: transparent;
-  border: 1px solid var(--text-color)
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
 }
 
 .rec .rec-arrow:hover {
   background-color: transparent !important;
-  color: var(--text-color);
+  color: #da18a3 !important;
+}
+
+.rec .rec-arrow:disabled {
+  background-color: transparent !important;
+  color: var(--text-color) !important;
 }
 
 .rec.rec-dot {

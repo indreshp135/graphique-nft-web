@@ -2,7 +2,7 @@ import { Button, Modal, Container, Image } from "react-bootstrap";
 import image from "../lucas.png";
 import classes from "./Modal.module.css";
 
-export const PaymentModal = (props) => {
+export const PaymentModal = props => {
   return (
     <Modal
       className={classes.modal}
@@ -12,6 +12,7 @@ export const PaymentModal = (props) => {
       style={{ borderRadius: "20px" }}
     >
       <Modal.Header
+        className={props.dark ? classes.dark_modal : ""}
         style={{
           display: "flex",
           justifyContent: "center",
@@ -22,7 +23,9 @@ export const PaymentModal = (props) => {
           Payment Successful
         </Modal.Title>
       </Modal.Header>
-      <Modal.Body className="show-grid">
+      <Modal.Body
+        className={props.dark ? `${classes.dark_modal} show-grid` : "show-grid"}
+      >
         <Container
           style={{
             display: "flex",
@@ -52,6 +55,7 @@ export const PaymentModal = (props) => {
         </Container>
       </Modal.Body>
       <Modal.Footer
+        className={props.dark ? classes.dark_modal : ""}
         style={{
           display: "flex",
           justifyContent: "center",

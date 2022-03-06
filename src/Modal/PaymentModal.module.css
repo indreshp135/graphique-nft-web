@@ -1,0 +1,9 @@
+.dark_modal {
+  background-color: #24252D;
+  color: #fff;
+  border-color: #3B3F4F;
+}
+
+.dark .modal-dialog-centered {
+  background: #24252D;
+}

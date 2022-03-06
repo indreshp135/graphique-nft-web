@@ -3,7 +3,7 @@ import React from "react";
 import image from "../lucas.png";
 import classes from "./Modal.module.css";
 
-export const CheckModal = (props) => {
+export const CheckModal = props => {
   const [isMobile, setIsMobile] = React.useState(false);
   React.useEffect(() => {
     function handleResize() {
@@ -20,7 +20,7 @@ export const CheckModal = (props) => {
     <Modal
       className={classes.modal}
       centered={!isMobile}
-      id={!isMobile?"":"checkModalMobile"}
+      id={!isMobile ? "" : "checkModalMobile"}
       open={true}
       onHide={props.onHide}
       show={props.show}
@@ -31,7 +31,7 @@ export const CheckModal = (props) => {
       }}
     >
       <Modal.Header
-       className={props.dark?classes.dark_modal:""}
+        className={props.dark ? classes.dark_modal : ""}
         style={{
           display: "flex",
           justifyContent: "center",
@@ -40,8 +40,9 @@ export const CheckModal = (props) => {
       >
         <Modal.Title className={classes.modalTitle}>Check Out</Modal.Title>
       </Modal.Header>
-      <Modal.Body 
-          className={props.dark?`${classes.dark_modal} show-grid`:"show-grid"} >
+      <Modal.Body
+        className={props.dark ? `${classes.dark_modal} show-grid` : "show-grid"}
+      >
         <Container
           style={{
             display: "flex",
@@ -113,7 +114,7 @@ export const CheckModal = (props) => {
         </Container>
       </Modal.Body>
       <Modal.Footer
-        className={props.dark?classes.dark_modal:""}
+        className={props.dark ? classes.dark_modal : ""}
         style={{
           display: "flex",
           justifyContent: "center",
@@ -121,8 +122,19 @@ export const CheckModal = (props) => {
           padding: "30px",
         }}
       >
-         <button onClick={props.onOpen} className={`${classes.buttonCancel} btn-primary`}> Checkout</button>
-            <button onClick={props.onHide} className={`${classes.buttonCancel} btn-btn`}>Cancel</button>
+        <button
+          onClick={props.onOpen}
+          className={`${classes.buttonCancel} btn-primary`}
+        >
+          {" "}
+          Checkout
+        </button>
+        <button
+          onClick={props.onHide}
+          className={`${classes.buttonCancel} btn-btn`}
+        >
+          Cancel
+        </button>
       </Modal.Footer>
     </Modal>
   );
